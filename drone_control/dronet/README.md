@@ -15,7 +15,7 @@ It is necessary for you to install [ROS](http://wiki.ros.org/ROS/Installation) t
 ### Step 2: Build your workspace
 
 The folder containing all the related code for a project is usually defined as `workspace'.
-Create your own workspace following [these instructions](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) and call it ```bebop_ws'''.
+Create your own workspace following [these instructions](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) and call it ```bebop_ws```.
 
 ### Step 3: Setup Bebop Autonomy
 
