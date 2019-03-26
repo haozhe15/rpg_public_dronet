@@ -29,3 +29,6 @@ conda remove -n amazonei_mxnet_p27 --all
 
 # check disk space
 df -h
+
+# install python-gflags
+pip install python-gflags
