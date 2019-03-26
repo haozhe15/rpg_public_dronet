@@ -18,3 +18,14 @@ python data_preprocessing/time_stamp_matching.py
 git config --global user.name haozhe15
 git config --global user.email wanghaozhe15@gmail.com
 git config --global credential.helper cache
+
+# download the dataset
+git clone https://github.com/circulosmeos/gdown.pl.git
+cd gdown.pl
+./gdown.pl 'https://docs.google.com/uc?export=download&id=18nOHNWvAVXhMYdHzcDq7-x0jKVxhI5wV' dataset.zip
+
+# remove unnecesary virtualenv
+conda remove -n amazonei_mxnet_p27 --all
+
+# check disk space
+df -h
