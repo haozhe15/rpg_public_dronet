@@ -1,9 +1,11 @@
 # steer angle
-python cnn.py --experiment_rootdir='./model/str_01' --train_dir='datasets/steering_dataset/training' --val_dir='datasets/steering_dataset/validation' --batch_size=16 --epochs=1 --log_rate=25 
+python cnn.py --experiment_rootdir='./model/str_01' --train_dir='datasets/steering_dataset/training' --val_dir='datasets/steering_dataset/validation' 
+--batch_size=16 --epochs=1 --log_rate=25 
 python evaluation.py --experiment_rootdir='./model/str_01' --weights_fname='weights_001.h5' --test_dir='datasets/steering_dataset/testing' 
 
 # collision probability
-python cnn.py --experiment_rootdir='./model/col_01' --train_dir='datasets/collision_dataset/training' --val_dir='datasets/collision_dataset/validation' --batch_size=16 --epochs=1 --log_rate=25 
+python cnn.py --experiment_rootdir='./model/col_01' --train_dir='datasets/collision_dataset/training' --val_dir='datasets/collision_dataset/validation' 
+--batch_size=16 --epochs=1 --log_rate=25 
 python evaluation.py --experiment_rootdir='./model/col_01' --weights_fname='weights_001.h5' --test_dir='datasets/collision_dataset/testing' 
 
 sudo find ~/Git -name ".DS_Store" -depth -exec rm {} \;
