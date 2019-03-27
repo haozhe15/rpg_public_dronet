@@ -93,7 +93,9 @@ def trainModel(train_data_generator, val_data_generator, model, initial_epoch):
 
 
 def _main():
+    # check which device is used for train
     sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+    
     # Create the experiment rootdir if not already there
     if not os.path.exists(FLAGS.experiment_rootdir):
         os.makedirs(FLAGS.experiment_rootdir)
